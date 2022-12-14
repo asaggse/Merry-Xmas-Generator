@@ -44,4 +44,12 @@ header {
    width: 350px;
    height: 350px;
    background-color: #4b61d1;
+   position: relative;
 }
+
+.preview > img {
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+
