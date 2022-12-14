@@ -8,3 +8,19 @@
     yellow: #f2ad41;
     white: #f4f5f0;
 */
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html {
+   background-color: #120945;
+   font-family: 'Livvic', sans-serif;
+   line-height: 1;
+}
+
+h1 {
+   font-size: 2;
+}
