@@ -24,9 +24,20 @@ html {
 h1 {
    font-size: 26px;
    color: #ff69b4;
+   margin: 16px;
 }
 
 .container {
    width: 350px;
-   
+   margin: 24px auto 0 auto;
+}
+
+header {
+   text-align: center;
+}
+
+.preview {
+   width: 350px;
+   height: 350px;
+   background-color: #4b61d1;
 }
