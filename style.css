@@ -45,6 +45,7 @@ header {
    height: 350px;
    background-color: #4b61d1;
    position: relative;
+   margin-bottom: 16px;
 }
 
 .preview > img {
@@ -53,3 +54,11 @@ header {
    left: 0;
 }
 
+.button {
+   padding: 8px 16px;
+   border: none;
+}
+
+.primaryButton {
+   background-color: #ff69b4;
+}
