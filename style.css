@@ -62,3 +62,12 @@ header {
 .primaryButton {
    background-color: #ff69b4;
 }
+
+.actions {
+   display: flex;
+   justify-content: space-between;
+}
+
+.actions > .button {
+   width: 48%;
+}
