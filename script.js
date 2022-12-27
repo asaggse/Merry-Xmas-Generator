@@ -11,6 +11,7 @@ function changeImage() {
       currentImageIndex = 1;
    }
    console.log('cambio immagine', currentImageIndex);
+   previewImage.src = `./images/img_${currentImageIndex}.png`;
 }
 
 changeImageButton.addEventListener('click', changeImage);
