@@ -11,19 +11,22 @@ function changeImage() {
    currentImageIndex+=1;
    if(currentImageIndex > assetsCount) {
       currentImageIndex = 1;
+//    if(currentImageIndex > assetsCount) {
    }
-   console.log('cambio immagine', currentImageIndex);
-   previewImage.src = `./images/img_${currentImageIndex}.png`;
+
+   currentIndex += 1;
+   if (currentIndex > assetsCount) {
+      currentIndex = 1;
+   }
+   // console.log(`cambio ${srcPrefix}`, currentIndex);
+   targetElement.src = `./images/${srcPrefix}_${currentIndex}.png`;
+
+   if (assetType === 'image') {
+      currentImageIndex = currentIndex;
+   } else if (assetType === 'text') {
+      currentTextIndex = currentIndex;
+   }
 }
 
-function changeText() {
-   currentTextIndex+=1;
-   if(currentTextIndex > assetsCount) {
-      currentTextIndex = 1;
-   }
-   console.log('cambio testo', currentTextIndex);
-   previewText.src = `./images/txt_${currentTextIndex}.png`;
-}
-
-changeImageButton.addEventListener('click', changeImage);
-changeTextButton.addEventListener('click', changeText);
+changeImageButton.addEventListener('click', () => changeAsset('image'));
+changeTextButton.addEventListener('click', () => changeAsset('text'));
