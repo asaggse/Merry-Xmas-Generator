@@ -1,5 +1,6 @@
 const changeImageButton = document.querySelector('#change-image');
-const previewImage = document.querySelector('preview-text');
+const previewImage = document.querySelector('#preview-image');
+const previewText = document.querySelector('#preview-text');
 
 const assetsCount = 4;
 let currentImageIndex = 1;
