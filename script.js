@@ -1,3 +1,7 @@
 const changeImageButton = document.querySelector('#change-image');
 
-changeImageButton.addEventListener('')
+function changeImage() {
+   console.log('cambio immagine');
+}
+
+changeImageButton.addEventListener('click', changeImage);
