@@ -1,0 +1,1 @@
+const changeImageButton = document.querySelector('#change-image');
