@@ -64,6 +64,10 @@ header {
    top: 0;
    left: 0;
    background-color: #f4f5f0;
+   width: 100%;
+   padding: 8px 0;
+   text-align: center;
+   font-weight: bold;
 }
 
 .button {
