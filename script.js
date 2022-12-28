@@ -4,6 +4,7 @@ const previewImage = document.querySelector('#preview-image');
 const previewText = document.querySelector('#preview-text');
 const senderInput = document.querySelector('#sender');
 const previewSender = document.querySelector('.preview-sender');
+const downloadButton = document.querySelector('#download');
 
 
 const assetsCount = 4;
@@ -70,6 +71,17 @@ function updateSender() {
    }
 }
 
+function downloadImage {
+   htmlToImage.toJpeg(document.getElementById('my-node'), { quality: 0.95 })
+      .then(function (dataUrl) {
+         var link = document.createElement('a');
+         link.download = 'my-image-name.jpeg';
+         link.href = dataUrl;
+         link.click();
+      });
+}
+
 changeImageButton.addEventListener('click', () => changeAsset('image'));
 changeTextButton.addEventListener('click', () => changeAsset('text'));
 senderInput.addEventListener('input', updateSender);
+downloadButton.addEventListener('click', downloadImage);
