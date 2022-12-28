@@ -59,6 +59,13 @@ header {
    left: 0;
 }
 
+.preview-sender {
+   position: absolute;
+   top: 0;
+   left: 0;
+   background-color: #f4f5f0;
+}
+
 .button {
    padding: 8px 16px;
    border: none;
@@ -72,12 +79,15 @@ header {
 .actions {
    display: flex;
    justify-content: space-between;
+   margin-bottom: 16px;
 }
 
 .actions > .button {
    width: 48%;
 }
 
-.input[type="text"] {
+input[type="text"] {
    font-family: 'Livvic', sans-serif;
+   padding: 12px;
+   width: 100%;
 }
