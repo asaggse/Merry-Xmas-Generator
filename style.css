@@ -76,14 +76,17 @@ header {
    cursor: pointer;
 }
 
-.primaryButton {
+.button-primary {
    background-color: #ff69b4;
+}
+
+.button-secondary {
+   background-color: #008c45;
 }
 
 .actions {
    display: flex;
    justify-content: space-between;
-   margin-bottom: 16px;
 }
 
 .actions > .button {
@@ -93,5 +96,9 @@ header {
 input[type="text"] {
    font-family: 'Livvic', sans-serif;
    padding: 12px;
+}
+
+.controls > * {
    width: 100%;
+   margin-bottom: 16px;
 }
