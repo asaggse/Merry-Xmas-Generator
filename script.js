@@ -63,8 +63,11 @@ function changeAsset(assetType) {
 function updateSender() {
    const txt = senderInput.value;
 
-   previewSender.innerText = txt;
-   console.log(txt);
+   if (txt.trim().length > 0) {
+      previewSender.innerText = txt;
+   } else {
+      previewSender.innerText = 'Augurissimi';
+   }
 }
 
 changeImageButton.addEventListener('click', () => changeAsset('image'));
