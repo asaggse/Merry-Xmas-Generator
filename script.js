@@ -71,7 +71,7 @@ function updateSender() {
    }
 }
 
-function downloadImage {
+function downloadImage() {
    htmlToImage.toJpeg(previewArea)
       .then(function (dataUrl) {
          var link = document.createElement('a');
