@@ -5,7 +5,7 @@ const previewText = document.querySelector('#preview-text');
 const senderInput = document.querySelector('#sender');
 const previewSender = document.querySelector('.preview-sender');
 const downloadButton = document.querySelector('#download');
-
+const previewArea = document.querySelector('.preview');
 
 const assetsCount = 4;
 let currentImageIndex = 1;
@@ -72,7 +72,7 @@ function updateSender() {
 }
 
 function downloadImage {
-   htmlToImage.toJpeg(document.getElementById('my-node'), { quality: 0.95 })
+   htmlToImage.toJpeg(previewArea)
       .then(function (dataUrl) {
          var link = document.createElement('a');
          link.download = 'my-image-name.jpeg';
