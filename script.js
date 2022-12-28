@@ -2,6 +2,7 @@ const changeImageButton = document.querySelector('#change-image');
 const changeTextButton = document.querySelector('#change-text');
 const previewImage = document.querySelector('#preview-image');
 const previewText = document.querySelector('#preview-text');
+const senderInput = document.querySelector('#sender');
 
 const assetsCount = 4;
 let currentImageIndex = 1;
@@ -57,5 +58,10 @@ function changeAsset(assetType) {
    }
 }
 
+function updateSender() {
+   console.log('lorem');
+}
+
 changeImageButton.addEventListener('click', () => changeAsset('image'));
 changeTextButton.addEventListener('click', () => changeAsset('text'));
+senderInput.addEventListener('input', updateSender);
