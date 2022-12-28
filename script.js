@@ -4,8 +4,11 @@ const previewImage = document.querySelector('#preview-image');
 const previewText = document.querySelector('#preview-text');
 
 const assetsCount = 4;
-let currentImageIndex = 1;
-let currentTextIndex = 1;
+// let currentImageIndex = 1;
+// let currentTextIndex = 1;
+
+let currentImageIndex = Math.floor(Math.random() * 4) + 1;
+let currentTextIndex = Math.floor(Math.random() * 4) + 1;
 
 // function changeImage() {
 //    currentImageIndex+=1;
