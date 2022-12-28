@@ -74,7 +74,7 @@ function updateSender() {
 function downloadImage() {
    htmlToImage.toJpeg(previewArea)
       .then(function (dataUrl) {
-         var link = document.createElement('a');
+         const link = document.createElement('a');
          link.download = 'my-image-name.jpeg';
          link.href = dataUrl;
          link.click();
